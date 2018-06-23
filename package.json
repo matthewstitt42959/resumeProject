@@ -1,17 +1,19 @@
 {
-  "name": "Resume Project",
+  "name": "ResumeProject",
   "version": "0.0.2",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "json-server": "json-server --watch db.json",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "postinstall": "ng build --aot -prod"
   },
   "dependencies": {
-    "@angular/cli": "^1.6.0",
-    "@angular/compiler-cli": "~4.3.1",
     "@angular/animations": "~4.3.1",
+    "@angular/cli": "^1.6.0",
     "@angular/common": "~4.3.1",
     "@angular/compiler": "~4.3.1",
+    "@angular/compiler-cli": "~4.3.1",
     "@angular/core": "~4.3.1",
     "@angular/forms": "~4.3.1",
     "@angular/http": "~4.3.1",
@@ -27,19 +29,20 @@
     "connect-multiparty": "2.0.x",
     "core-js": "^2.4.1",
     "ejs": "2.5.x",
+    "enhanced-resolve": "^3.4.1",
     "errorhandler": "1.5.x",
     "express": "4.15.x",
     "http-server": "^0.9.0",
     "ie-shim": "^0.1.0",
-    "json-server": "^0.12.0",
-    "jasmine": "^2.5.3",
+    "jasmine": "^2.99.0",
     "jasminewd2": "^2.1.0",
+    "json-server": "^0.12.0",
     "method-override": "2.3.x",
     "morgan": "1.8.x",
     "mysql": "^2.15.0",
     "reflect-metadata": "^0.1.10",
     "rxjs": "~5.0.2",
-    "selenium-webdriver": "3.5.3",
+    "typescript": "~2.3.3",
     "zone.js": "0.8.14"
   },
   "devDependencies": {
@@ -103,9 +106,9 @@
     "tslint": "~4.5.1",
     "tslint-loader": "^3.5.2",
     "typedoc": "^0.7.1",
-    "typescript": "~2.2.2",
+    "typescript": "~2.3.3",
     "url-loader": "^0.5.8",
-    "webpack": "~2.6.1",
+    "webpack": "^4.12.0",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "~2.4.2",
     "webpack-dll-bundles-plugin": "^1.0.0-beta.5",
@@ -116,10 +119,11 @@
     "url": "git://github.com/angular/protractor.git"
   },
   "engines": {
-    "node": "6.x"
+    "node": "6.x",
+    "npm": "3.x"
   },
   "bin": {
     "protractor": "bin/protractor",
     "webdriver-manager": "bin/webdriver-manager"
-    }
+  }
 }

@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
+    "build": "ng build", 
+    "test": "ng test",
     "json-server": "json-server --watch db.json",
     "test": "karma start karma.conf.js",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build - -aot -prod"
   },
   "dependencies": {
     "@angular/animations": "~4.3.1",

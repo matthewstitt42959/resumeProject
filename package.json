@@ -122,8 +122,8 @@
     "url": "git://github.com/angular/protractor.git"
   },
   "engines": {
-    "node" : "6.x",
-    "npm": "5.x"
+    "node" : "6.11.0",
+    "npm": "3.10.10"
   },
   "bin": {
     "protractor": "bin/protractor",

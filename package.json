@@ -67,6 +67,7 @@
     "css-loader": "^0.28.0",
     "exports-loader": "^0.6.4",
     "expose-loader": "^0.7.3",
+    "express": "^4.13.3",
     "extract-text-webpack-plugin": "~2.1.0",
     "file-loader": "^0.11.1",
     "find-root": "^1.0.0",
@@ -122,8 +123,7 @@
     "url": "git://github.com/angular/protractor.git"
   },
   "engines": {
-    "node" : "6.11.0",
-    "npm": "3.10.10"
+    "node" : "6.11.0"
   },
   "bin": {
     "protractor": "bin/protractor",

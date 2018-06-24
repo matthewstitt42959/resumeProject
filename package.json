@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "ng build", 
-    "test": "ng test",
-    "json-server": "json-server --watch db.json",
+    "build": "ng build",
     "test": "karma start karma.conf.js",
+    "json-server": "json-server --watch db.json",
     "postinstall": "ng build - -aot -prod"
   },
   "dependencies": {
@@ -67,7 +66,6 @@
     "css-loader": "^0.28.0",
     "exports-loader": "^0.6.4",
     "expose-loader": "^0.7.3",
-    "express": "^4.13.3",
     "extract-text-webpack-plugin": "~2.1.0",
     "file-loader": "^0.11.1",
     "find-root": "^1.0.0",
@@ -113,6 +111,7 @@
     "typescript": "~2.3.3",
     "url-loader": "^0.5.8",
     "webpack": "^4.12.0",
+    "webpack-command": "^0.2.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "~2.4.2",
     "webpack-dll-bundles-plugin": "^1.0.0-beta.5",
@@ -123,7 +122,7 @@
     "url": "git://github.com/angular/protractor.git"
   },
   "engines": {
-    "node" : "6.11.0"
+    "node": "6.11.0"
   },
   "bin": {
     "protractor": "bin/protractor",

@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "karma start karma.conf.js",
     "json-server": "json-server --watch db.json",
-    "postinstall": "ng build - -aot -prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
     "@angular/animations": "~4.3.1",

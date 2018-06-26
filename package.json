@@ -1,20 +1,19 @@
 {
-  "name": "resumeproject",
-  "version": "0.0.2",
+  "name": "BrokenStick",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "ng build",
-    "test": "karma start karma.conf.js",
-    "json-server": "json-server --watch db.json",
-    "heroku-postbuild": "ng build --prod"
+    "build": "ng build", 
+    "postinstall": "ng build --aot -prod"
   },
+    "private" : "true", 
   "dependencies": {
     "@angular/animations": "~4.3.1",
-    "@angular/cli": "^1.6.0",
+    "@angular/cli": "^1.5.0",
+    "@angular/compiler-cli": "~4.3.1",
     "@angular/common": "~4.3.1",
     "@angular/compiler": "~4.3.1",
-    "@angular/compiler-cli": "~4.3.1",
     "@angular/core": "~4.3.1",
     "@angular/forms": "~4.3.1",
     "@angular/http": "~4.3.1",
@@ -30,25 +29,24 @@
     "connect-multiparty": "2.0.x",
     "core-js": "^2.4.1",
     "ejs": "2.5.x",
-    "enhanced-resolve": "^3.4.1",
     "errorhandler": "1.5.x",
     "express": "4.15.x",
     "http-server": "^0.9.0",
     "ie-shim": "^0.1.0",
-    "jasmine": "^2.99.0",
-    "jasminewd2": "^2.1.0",
     "json-server": "^0.12.0",
+    "jasmine": "^2.5.3",
+    "jasminewd2": "^2.1.0",
     "method-override": "2.3.x",
     "morgan": "1.8.x",
     "mysql": "^2.15.0",
     "reflect-metadata": "^0.1.10",
     "rxjs": "~5.0.2",
-    "typescript": "~2.3.3",
-    "webpack": "^4.12.0",
+    "selenium-webdriver": "3.5.3",
+    "webpack": "~3.11.0",
     "zone.js": "0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.0",
+    "@angular/cli": "^1.5.0",
     "@angular/compiler-cli": "~4.3.1",
     "@types/hammerjs": "^2.0.34",
     "@types/jasmine": "2.5.45",
@@ -110,22 +108,17 @@
     "typedoc": "^0.7.1",
     "typescript": "~2.3.3",
     "url-loader": "^0.5.8",
-    "webpack": "^4.12.0",
-    "webpack-command": "^0.2.1",
-    "webpack-dev-middleware": "^1.10.1",
-    "webpack-dev-server": "~2.4.2",
-    "webpack-dll-bundles-plugin": "^1.0.0-beta.5",
-    "webpack-merge": "~4.1.0"
+    "webpack": "~3.11.0",
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/angular/protractor.git"
   },
   "engines": {
-    "node": "6.11.0"
+    "node": "6.x"
   },
   "bin": {
     "protractor": "bin/protractor",
     "webdriver-manager": "bin/webdriver-manager"
-  }
+    }
 }

@@ -1,6 +1,5 @@
 {
-  "name": "BrokenStick",
-  "version": "0.0.0",
+  "name": "resumeproject",
   "private": true,
   "scripts": {
     "start": "node server.js",
@@ -41,7 +40,6 @@
     "mysql": "^2.15.0",
     "reflect-metadata": "^0.1.10",
     "rxjs": "~5.4.2",
-    "typescript": "~2.4.2",
     "webpack": "~3.11.0",
     "zone.js": "0.8.14"
   },
